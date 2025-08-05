@@ -1,0 +1,3 @@
+john.doe123@gmail.com
+sales@mycompany.org
+support@example.com
