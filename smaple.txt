@@ -1,0 +1,5 @@
+Hello team,
+Please contact us at support@example.com or sales@mycompany.org.
+You can also reach john.doe123@gmail.com for more details.
+Thanks,
+The Team
