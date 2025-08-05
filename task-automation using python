@@ -1,0 +1,12 @@
+import re
+input_file = "sample.txt"           
+output_file = "emails_extracted.txt"  
+email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+with open(input_file, 'r') as file:
+    content = file.read()
+emails = re.findall(email_pattern, content)
+unique_emails = sorted(set(emails))
+with open(output_file, 'w') as file:
+    for email in unique_emails:
+        file.write(email + '\n')
+print(f"{len(unique_emails)} email(s) extracted and saved to '{output_file}'.")
